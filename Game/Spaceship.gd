@@ -7,9 +7,14 @@ extends CharacterBody2D
 
 @onready var axis = Vector2.ZERO
 
+var bullet = preload("res://Game/Bullet.tscn")
+
 func _physics_process(delta):
 	move(delta)
 	rotate_ship(delta)
+
+	if Input.is_action_just_pressed("space"):
+		shoot()
 
 func get_input_axis():
 	axis.x = int(Input.is_action_pressed("move_right")) - int(Input.is_action_pressed("move_left"))
@@ -40,3 +45,10 @@ func rotate_ship(delta):
 	if axis != Vector2.ZERO:
 		var target_angle = Vector2.RIGHT.angle_to(axis) + PI/2
 		rotation = lerp_angle(rotation, target_angle, ROTATION_SPEED * delta)
+
+func shoot():
+	var bullet_instance = bullet.instance()
+	bullet_instance.position = position
+	bullet_instance.rotation = rotation
+	get_parent().add_child(bullet_instance)
+	bullet_instance.velocity = Vector2.RIGHT.rotated(rotation) * bullet_instance.speed
