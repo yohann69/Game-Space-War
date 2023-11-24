@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmck00gi5o3r8"]
+
+[ext_resource type="Texture2D" uid="uid://2ly7fbfdc5gn" path="res://Ressources/laz_1.png" id="1_18g5e"]
+[ext_resource type="Script" path="res://Game/Laser.gd" id="1_xndw1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t11cm"]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_xndw1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_18g5e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_t11cm")

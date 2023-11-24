@@ -1,45 +1,14 @@
 2a60927148abd1d33b818b535e306557
-::res://::1700840421
+::res://::1700850443
 icon.svg::CompressedTexture2D::6122660196779405568::1700811559::1700811567::1::::<><>::
 README.md::TextFile::-1::1700838493::0::1::::<><>::
-::res://Game/::1700840116
-Bullet.gd::GDScript::-1::1700821217::0::1::::<>Area2D<>::
-Bullet.tscn::PackedScene::-1::1700839127::0::1::::<><>::
-Game Space War.gd::GDScript::-1::1700837368::0::1::::<>Node2D<>::
-Game Space War.tscn::PackedScene::3845804288430247639::1700839597::0::1::::<><>::res://Game/Game Space War.gd<>uid://ukmxn4rcyhom<>uid://c6by8idbi4mja
-Spaceship.gd::GDScript::-1::1700839595::0::1::::<>CharacterBody2D<>::
-Spaceship.tscn::PackedScene::6952276461823017002::1700839597::0::1::::<><>::res://Game/Spaceship.gd<>uid://cdouocn2vk4ka
-::res://Game/Downloads/::1700840132
-desktop.ini::TextFile::-1::1700840117::0::1::::<><>::
-::res://Game/Downloads/MicrosoftEdgeDropFiles/::1700840123
-::res://Game/Downloads/MicrosoftEdgeDropFiles/AAD/::1700840123
-::res://Game/Downloads/Telegram Desktop/::1700840151
-20201008_184746098_001.jpg::CompressedTexture2D::1211264073589606769::1700840127::1700840140::1::::<><>::
-20201008_184746098_002.jpg::CompressedTexture2D::7588974380820793575::1700840128::1700840139::1::::<><>::
-20211127_133601085_001.jpg::CompressedTexture2D::8612595628599913846::1700840128::1700840140::1::::<><>::
-20211127_133854235_001.jpg::CompressedTexture2D::5249271900825465870::1700840128::1700840135::1::::<><>::
-Camera V2.2.png::CompressedTexture2D::2716703128012579597::1700840128::1700840136::1::::<><>::
-Camera V2.png::CompressedTexture2D::2908512207103584782::1700840128::1700840136::1::::<><>::
-Certificat de 1ère dose.jpeg::CompressedTexture2D::2196426018396607067::1700840128::1700840150::1::::<><>::
-Certificat de 2ème dose.jpeg::CompressedTexture2D::5495576080728987081::1700840128::1700840150::1::::<><>::
-Certificat de Vaccination.jpeg::CompressedTexture2D::7337490508328202773::1700840128::1700840151::1::::<><>::
-IMG_8186-2.jpg::CompressedTexture2D::740809256542532198::1700840128::1700840143::1::::<><>::
-IMG_20230904_213550.jpg::CompressedTexture2D::2710648520413418179::1700840128::1700840140::1::::<><>::
-IMG_20230904_213554.jpg::CompressedTexture2D::3032615924131597785::1700840128::1700840140::1::::<><>::
-IMG_20230910_165622.jpg::CompressedTexture2D::2940063738832807663::1700840128::1700840135::1::::<><>::
-IMG_20230910_165630.jpg::CompressedTexture2D::2395755837559775889::1700840128::1700840136::1::::<><>::
-IMG_20230910_165702.jpg::CompressedTexture2D::2729723365978155155::1700840128::1700840137::1::::<><>::
-IMG_20230910_165706.jpg::CompressedTexture2D::1552814012622880410::1700840128::1700840137::1::::<><>::
-IMG_20230910_165709.jpg::CompressedTexture2D::3189336701202043184::1700840128::1700840137::1::::<><>::
-IMG_20230911_074237.jpg::CompressedTexture2D::5269273708076468796::1700840128::1700840140::1::::<><>::
-photo_2023-10-11_08-52-36.jpg::CompressedTexture2D::8248612992189023082::1700840128::1700840133::1::::<><>::
-photo_2023-10-22_16-44-26.jpg::CompressedTexture2D::369840600200946069::1700840128::1700840133::1::::<><>::
-photo_2023-10-22_16-44-28.jpg::CompressedTexture2D::6015657583324163247::1700840128::1700840133::1::::<><>::
-photo_2023-10-29_15-12-39.jpg::CompressedTexture2D::8811788074858543737::1700840128::1700840133::1::::<><>::
-photo_2023-10-29_15-15-24.jpg::CompressedTexture2D::4732959516746467689::1700840129::1700840133::1::::<><>::
-photo_2023-10-31_21-45-51.jpg::CompressedTexture2D::3734705430530356052::1700840129::1700840133::1::::<><>::
-Screenshot_2022-12-20-14-36-23-925_com.snapchat.android.jpg::CompressedTexture2D::1589504955228403501::1700840129::1700840134::1::::<><>::
-Screenshot_2023-10-03-12-09-18-555_com.microsoft.emmx.jpg::CompressedTexture2D::1792405951195936872::1700840129::1700840134::1::::<><>::
+::res://Game/::1700845165
+Game Space War.gd::GDScript::-1::1700844835::0::1::::<>Node2D<>::
+Game Space War.tscn::PackedScene::3845804288430247639::1700845164::0::1::::<><>::res://Game/Game Space War.gd<>uid://ukmxn4rcyhom<>uid://c6by8idbi4mja
+Laser.gd::GDScript::-1::1700845164::0::1::::<>Area2D<>::
+Laser.tscn::PackedScene::8006310067775835171::1700844291::0::1::::<><>::uid://2ly7fbfdc5gn<>res://Game/Laser.gd
+Spaceship.gd::GDScript::-1::1700844826::0::1::::<>CharacterBody2D<>::
+Spaceship.tscn::PackedScene::6952276461823017002::1700845165::0::1::::<><>::res://Game/Spaceship.gd<>uid://cdouocn2vk4ka
 ::res://Ressources/::1700839438
 laz_1.png::CompressedTexture2D::1919321551145738481::1699622302::1700821138::1::::<><>::
 space-planets-drawing-4k-kf-3612564176.jpg::CompressedTexture2D::1425191055853162308::1700811417::1700811609::1::::<><>::

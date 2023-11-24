@@ -1,4 +1,4 @@
 res://Game/Game Space War.tscn
 res://Game/Spaceship.gd
 res://Game/Spaceship.tscn
-res://Game/Bullet.tscn
+res://Game/Laser.gd

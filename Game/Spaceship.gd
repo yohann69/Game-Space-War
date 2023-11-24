@@ -7,7 +7,7 @@ extends CharacterBody2D
 
 @onready var axis = Vector2.ZERO
 
-var bullet = preload("res://Game/Bullet.tscn")
+var laser = preload("res://Game/Laser.tscn")
 
 func _physics_process(delta):
 	move(delta)
@@ -47,8 +47,9 @@ func rotate_ship(delta):
 		rotation = lerp_angle(rotation, target_angle, ROTATION_SPEED * delta)
 
 func shoot():
-	var bullet_instance = bullet.instance()
-	bullet_instance.position = position
-	bullet_instance.rotation = rotation
-	get_parent().add_child(bullet_instance)
-	bullet_instance.velocity = Vector2.RIGHT.rotated(rotation) * bullet_instance.speed
+	var laser_instance = laser.instantiate()
+	laser_instance.position = position
+	laser_instance.rotation = rotation
+	# Set the laser's velocity based on the spaceship's rotation
+	laser_instance.velocity = Vector2.RIGHT.rotated(rotation - PI/2) * laser_instance.speed
+	get_parent().add_child(laser_instance)

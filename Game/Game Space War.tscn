@@ -18,10 +18,10 @@ offset_right = 8339.0
 offset_bottom = 4690.0
 texture = ExtResource("1_gv2sg")
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1_r48tx")]
+[node name="Spaceship" parent="." instance=ExtResource("1_r48tx")]
 position = Vector2(2017, 1176)
 
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="Spaceship"]
 position_smoothing_enabled = true
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
