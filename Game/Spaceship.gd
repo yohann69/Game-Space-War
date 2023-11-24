@@ -3,12 +3,13 @@ extends CharacterBody2D
 @export var MAX_SPEED = 500
 @export var ACCELERATION = 2000
 @export var FRICTION = 1700
+@export var ROTATION_SPEED = 2.5
 
 @onready var axis = Vector2.ZERO
 
 func _physics_process(delta):
 	move(delta)
-	rotate_ship()
+	rotate_ship(delta)
 
 func get_input_axis():
 	axis.x = int(Input.is_action_pressed("move_right")) - int(Input.is_action_pressed("move_left"))
@@ -35,7 +36,7 @@ func apply_movement(accel):
 	velocity += accel
 	velocity = velocity.limit_length(MAX_SPEED)
 
-func rotate_ship():
+func rotate_ship(delta):
 	if axis != Vector2.ZERO:
-		var target_angle = Vector2.RIGHT.angle_to(axis)
-		rotation = target_angle + PI/2
+		var target_angle = Vector2.RIGHT.angle_to(axis) + PI/2
+		rotation = lerp_angle(rotation, target_angle, ROTATION_SPEED * delta)

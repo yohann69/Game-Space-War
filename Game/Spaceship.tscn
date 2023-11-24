@@ -9,11 +9,11 @@ size = Vector2(89, 112)
 [node name="Spaceship" type="CharacterBody2D"]
 script = ExtResource("1_a3ji4")
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 1)
+shape = SubResource("RectangleShape2D_ucsfy")
+
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(3.8147e-06, -3.8147e-06)
 scale = Vector2(0.237119, 0.237119)
 texture = ExtResource("2_40sxb")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 1)
-shape = SubResource("RectangleShape2D_ucsfy")
