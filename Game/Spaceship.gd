@@ -48,7 +48,8 @@ func rotate_ship(delta):
 
 func shoot():
 	var laser_instance = laser.instantiate()
-	laser_instance.position = position
+	# Set the laser's position with an offset of 55 pixels in the direction the spaceship is pointing
+	laser_instance.position = position + Vector2.RIGHT.rotated(rotation - PI/2) * 55
 	laser_instance.rotation = rotation
 	# Set the laser's velocity based on the spaceship's rotation
 	laser_instance.velocity = Vector2.RIGHT.rotated(rotation - PI/2) * laser_instance.speed
