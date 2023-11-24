@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://bu163m8cme55d"]
+
+[ext_resource type="Script" path="res://Game/Game Space War.gd" id="1_5y47q"]
+[ext_resource type="Texture2D" uid="uid://ukmxn4rcyhom" path="res://Ressources/space-planets-drawing-4k-kf-3612564176.jpg" id="1_gv2sg"]
+[ext_resource type="PackedScene" uid="uid://c6by8idbi4mja" path="res://Game/Spaceship.tscn" id="1_r48tx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rurd6"]
+size = Vector2(8380.5, 361)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nwhf7"]
+size = Vector2(227, 5414)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_5y47q")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 8339.0
+offset_bottom = 4690.0
+texture = ExtResource("1_gv2sg")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_r48tx")]
+position = Vector2(2017, 1176)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position_smoothing_enabled = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Inside the Map" type="CollisionPolygon2D" parent="StaticBody2D"]
+position = Vector2(2068, 949)
+polygon = PackedVector2Array(-980, -160, -339, -545, -202, -553, 1055, -486, 965, -192, -119, -327, -427, -396)
+
+[node name="Outer Layer Bottom" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(4183, 4870)
+shape = SubResource("RectangleShape2D_rurd6")
+
+[node name="Outer Layer Top" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(4178.75, -180)
+shape = SubResource("RectangleShape2D_rurd6")
+
+[node name="Outer Layer Right" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(8452, 2344)
+shape = SubResource("RectangleShape2D_nwhf7")
+
+[node name="Outer Layer Left" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-113, 2344)
+shape = SubResource("RectangleShape2D_nwhf7")

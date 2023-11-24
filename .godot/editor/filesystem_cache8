@@ -1,0 +1,17 @@
+2a60927148abd1d33b818b535e306557
+::res://::1700835645
+Bullet.gd::GDScript::-1::1700821217::0::1::::<>Area2D<>::
+Bullet.tscn::PackedScene::4508219626746858528::1700835645::0::1::::<><>::res://Bullet.gd<>uid://2ly7fbfdc5gn
+icon.svg::CompressedTexture2D::6122660196779405568::1700811559::1700811567::1::::<><>::
+::res://Game/::1700835645
+Game Space War.gd::GDScript::-1::1700818393::0::1::::<>Node2D<>::
+Game Space War.tscn::PackedScene::3845804288430247639::1700835645::0::1::::<><>::res://Game/Game Space War.gd<>uid://ukmxn4rcyhom<>uid://c6by8idbi4mja
+Spaceship.gd::GDScript::-1::1700835645::0::1::::<>CharacterBody2D<>::
+Spaceship.tscn::PackedScene::6952276461823017002::1700835645::0::1::::<><>::uid://ch83ufypl5sdb<>res://Game/Spaceship.gd
+::res://Ressources/::1700836141
+laz_1.png::CompressedTexture2D::1919321551145738481::1699622302::1700821138::1::::<><>::
+perseus_1.png::CompressedTexture2D::5334023830801448111::1699622302::1700811754::1::::<><>::
+perseus_2.png::CompressedTexture2D::1933837045980591368::1699622302::1700811754::1::::<><>::
+perseus_3.png::CompressedTexture2D::3162360949244451661::1699622302::1700811754::1::::<><>::
+space-planets-drawing-4k-kf-3612564176.jpg::CompressedTexture2D::1425191055853162308::1700811417::1700811609::1::::<><>::
+spaceship.png::CompressedTexture2D::5013548654211538056::1700836104::1700836143::1::::<><>::
