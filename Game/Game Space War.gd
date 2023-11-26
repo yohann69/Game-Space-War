@@ -17,9 +17,16 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	# Add the enemies to the enemies node at a random place
-	if get_node("Enemies").get_child_count() < MAX_ENEMY:
-		var new_enemy = enemy.instantiate()
-		new_enemy.position = Vector2(randf_range(0, get_viewport().size.x), randf_range(0, get_viewport().size.y))
-		get_node("Enemies").add_child(new_enemy)
+	if get_node("Enemies").get_child_count() < MAX_ENEMY - 1 and ENEMY_TO_DEFEAT > 1:
+		create_enemy(1, false)
+	if get_node("Enemies").get_child_count() < MAX_ENEMY and ENEMY_TO_DEFEAT == 1:
+		create_enemy(5, true)
 
 
+func create_enemy(lives, final_boss):
+	var new_enemy = enemy.instantiate()
+	new_enemy.NUMBER_OF_LIVES = lives
+	new_enemy.IS_FINAL_BOSS = final_boss
+	new_enemy.position = Vector2(randf_range(0, get_viewport().size.x), randf_range(0, get_viewport().size.y))
+	get_node("Enemies").add_child(new_enemy)
+	ENEMY_TO_DEFEAT -= 1
