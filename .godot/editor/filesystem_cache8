@@ -1,16 +1,19 @@
 2a60927148abd1d33b818b535e306557
-::res://::1700990685
+::res://::1700994533
 export_presets.cfg::TextFile::-1::1700854586::0::1::::<><>::
 icon.svg::CompressedTexture2D::6122660196779405568::1700811559::1700811567::1::::<><>::
 README.md::TextFile::-1::1700838493::0::1::::<><>::
-::res://Game/::1700911805
-Game Space War.gd::GDScript::-1::1700844835::0::1::::<>Node2D<>::
-Game Space War.tscn::PackedScene::3845804288430247639::1700911804::0::1::::<><>::res://Game/Game Space War.gd<>uid://ukmxn4rcyhom<>uid://c6by8idbi4mja
-Laser.gd::GDScript::-1::1700911801::0::1::::<>Area2D<>::
-Laser.tscn::PackedScene::8006310067775835171::1700911805::0::1::::<><>::uid://2ly7fbfdc5gn<>res://Game/Laser.gd
-Spaceship.gd::GDScript::-1::1700909077::0::1::::<>CharacterBody2D<>::
-Spaceship.tscn::PackedScene::6952276461823017002::1700911804::0::1::::<><>::res://Game/Spaceship.gd<>uid://cdouocn2vk4ka
-::res://Ressources/::1700839438
+::res://Game/::1700994524
+Enemy.tscn::PackedScene::7967919573565467199::1700994448::0::1::::<><>::uid://bf2el2slnfxmq
+Game Space War.gd::GDScript::-1::1700994524::0::1::::<>Node2D<>::
+Game Space War.tscn::PackedScene::3845804288430247639::1700994517::0::1::::<><>::res://Game/Game Space War.gd<>uid://ukmxn4rcyhom<>uid://c6by8idbi4mja
+Laser.gd::GDScript::-1::1700992065::0::1::::<>Area2D<>::
+Laser.tscn::PackedScene::8006310067775835171::1700994448::0::1::::<><>::uid://2ly7fbfdc5gn<>res://Game/Laser.gd
+Spaceship.gd::GDScript::-1::1700992684::0::1::::<>CharacterBody2D<>::
+Spaceship.tscn::PackedScene::6952276461823017002::1700994448::0::1::::<><>::res://Game/Spaceship.gd<>uid://cdouocn2vk4ka
+::res://Ressources/::1700993152
+enemy-boss-ship.png::CompressedTexture2D::3736728984928880985::1700993150::1700993152::1::::<><>::
+enemy-ship.png::CompressedTexture2D::2793367059401215580::1700993104::1700993108::1::::<><>::
 laz_1.png::CompressedTexture2D::1919321551145738481::1699622302::1700821138::1::::<><>::
 space-planets-drawing-4k-kf-3612564176.jpg::CompressedTexture2D::1425191055853162308::1700811417::1700811609::1::::<><>::
 spaceship.png::CompressedTexture2D::5013548654211538056::1700836104::1700836143::1::::<><>::

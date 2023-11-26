@@ -13,5 +13,10 @@ func _physics_process(delta):
 
 func _on_Laser_body_entered(body):
 	print("Laser collided with body", body.name)
+
+	# If the body is of type CharacterBody2D, queue it for deletion
+	if body is CharacterBody2D:
+		body.queue_free()
+
 	# When the laser hits something, queue it for deletion
 	queue_free()

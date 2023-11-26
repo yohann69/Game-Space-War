@@ -46,5 +46,4 @@ shape = SubResource("RectangleShape2D_nwhf7")
 position = Vector2(-113, 2344)
 shape = SubResource("RectangleShape2D_nwhf7")
 
-[node name="Spaceship2" parent="." instance=ExtResource("1_r48tx")]
-position = Vector2(2252, 1036)
+[node name="Enemies" type="Node2D" parent="."]

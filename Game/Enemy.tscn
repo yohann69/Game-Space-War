@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dlryqa08alfsp"]
+
+[ext_resource type="Script" path="res://Game/Enemy.gd" id="1_ecvhy"]
+[ext_resource type="Texture2D" uid="uid://bf2el2slnfxmq" path="res://Ressources/enemy-ship.png" id="1_xfx12"]
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_ecvhy")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-0.0588009, -0.0247216)
+scale = Vector2(0.149922, 0.149922)
+polygon = PackedVector2Array(-194, 63, -93, -3, -74, -32, -49, -39, -30, -152, 17, -157, 37, -120, 46, -53, 78, -34, 79, -4, 117, 6, 154, 35, 201, 63, 203, 127, 204, 146, 175, 147, 136, 130, 113, 139, 76, 127, 54, 135, 50, 163, -59, 164, -68, 118, -97, 142, -152, 144, -201, 151, -208, 81)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1.90735e-06)
+scale = Vector2(0.155316, 0.155316)
+texture = ExtResource("1_xfx12")

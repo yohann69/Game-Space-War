@@ -1,8 +1,9 @@
+Node2D
 CollisionPolygon2D
 Sprite2D
 CollisionShape2D
-Area2D
 CharacterBody2D
+Area2D
 RigidBody2D
 Camera2D
 TextureRect

@@ -1,5 +1,7 @@
-res://Game/Laser.tscn
+res://Game/Enemy.tscn
 res://Game/Spaceship.gd
-res://Game/Laser.gd
 res://Game/Game Space War.tscn
 res://Game/Spaceship.tscn
+res://Game/Laser.tscn
+res://Game/Enemy.gd
+res://Game/Laser.gd
